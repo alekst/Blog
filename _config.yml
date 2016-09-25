@@ -22,8 +22,46 @@ url: "http://tapinsh.com" # the base hostname & protocol for your site
 twitter_username: alekst
 github_username:  alekst_
 
+
+paginate: 5
+paginate_path: "/articles/page:num/"
 # Build settings
 markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  parse_block_html: true
+
+include:
+  - _pages
+exclude:
+  - vendor
+
+gems:
+  -jekyll-paginate
+  
 theme: minima
 
 permalink: /blog/:year/:month/:day/:title
+
+navigation
+  - title: Articles
+    url: /articles/
+    desc: I write
+  - title: Projects
+    url: /projects/
+    desc: I do
+  - title: About
+    url: /about/
+    desc: About me
+
+
+defaults:
+  -
+    scope:
+      path: ''
+      type: posts
+    values:
+      layout: post
+
+
