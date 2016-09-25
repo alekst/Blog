@@ -25,3 +25,5 @@ github_username:  alekst_
 # Build settings
 markdown: kramdown
 theme: minima
+
+permalink: /blog/:year/:month/:day/:title
