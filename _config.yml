@@ -38,13 +38,13 @@ exclude:
   - vendor
 
 gems:
-  -jekyll-paginate
+  - jekyll-paginate
   
-theme: minima
 
 permalink: /blog/:year/:month/:day/:title
 
-navigation
+navigation:
+
   - title: Articles
     url: /articles/
     desc: I write
